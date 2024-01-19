@@ -168,7 +168,7 @@ def layout(*args):
         bottom=0,
         margin=pix(0, 0, 0, 0),
         width=percent(100),
-        color="black",
+        color="grey",
         text_align="center",
         height=10,
         opacity=1
