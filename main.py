@@ -69,7 +69,7 @@ st.dataframe(pd.DataFrame(data,index=[0]),hide_index=True)
 X = get_dummies(user_feature)
 
 #Predict High Risk
-high_risk_clf = load_model("https://raw.githubusercontent.com/bajasiagian/cc_aproval_project/blob/master/model/high_risk_prediction")
+high_risk_clf = load_model("https://raw.githubusercontent.com/bajasiagian/cc_aproval_project/master/model/high_risk_prediction")
 pred_high_risk = predict_model(high_risk_clf, data=X)
 
 pred_label = pred_high_risk.prediction_label[0]
