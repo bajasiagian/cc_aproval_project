@@ -4,12 +4,12 @@ import numpy as np
 import pandas as pd
 
 #Read CSV
-data = pd.read_csv(r'C:\Users\Baja\AppData\Local\Project_Python\Project_CRM\dataset\data.csv')
+data = pd.read_csv("https://github.com/bajasiagian/cc_aproval_project/blob/master/dataset/data.csv")
 p = data[data.is_high_risk==0]
 print(p.cluster.unique())
 
-count_rec = pd.read_csv(r'C:\Users\Baja\AppData\Local\Project_Python\Project_CRM\dataset\credit_record.csv')
-credit_record = pd.read_csv(r'C:\Users\Baja\AppData\Local\Project_Python\Project_CRM\dataset\credit_record_raw.csv')
+count_rec = pd.read_csv("https://github.com/bajasiagian/cc_aproval_project/master/dataset/credit_record.csv")
+credit_record = pd.read_csv("https://github.com/bajasiagian/cc_aproval_project/master/dataset/credit_record_raw.csv")
 
 #Color Dictionary
 def get_color(group):

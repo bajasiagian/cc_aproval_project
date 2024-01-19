@@ -69,7 +69,7 @@ st.dataframe(pd.DataFrame(data,index=[0]),hide_index=True)
 X = get_dummies(user_feature)
 
 #Predict High Risk
-high_risk_clf = load_model(r"C:\Users\Baja\AppData\Local\Project_Python\Project_CRM\model\high_risk_prediction")
+high_risk_clf = load_model("https://github.com/bajasiagian/cc_aproval_project/blob/master/model/high_risk_prediction")
 pred_high_risk = predict_model(high_risk_clf, data=X)
 
 pred_label = pred_high_risk.prediction_label[0]
@@ -83,7 +83,7 @@ st.markdown(f"#### With {pred_score}% confidence ")
 #Append High Risk Result
 X['is_high_risk_1'] = np.where(pred_label == 1,1,0)
 #Predict CLuster
-cluster_clf = load_model(r"C:\Users\Baja\AppData\Local\Project_Python\Project_CRM\model\cluster_prediction")
+cluster_clf = load_model("https://github.com/bajasiagian/cc_aproval_project/master/model/cluster_prediction")
 pred_cluster = predict_model(cluster_clf, data=X)
 
 pred_label_cluster = pred_cluster.prediction_label[0]
