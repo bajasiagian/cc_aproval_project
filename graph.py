@@ -197,7 +197,7 @@ def get_histogram(high_low,var):
    fig = go.Figure()
    for col in df[var].unique():
       for group in ['User Group 0','User Group 1','User Group 2']:
-        fig.add_trace(go.Histogram(x=df[df[col]==var][group],name=col))
+        fig.add_trace(go.Histogram(x=df[(df[col]==var) & (df['cluster']==group)],name=col))
       
    fig.update_layout(title=var)
 
