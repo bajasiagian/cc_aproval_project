@@ -197,7 +197,7 @@ def footer():
     myargs = [
         "Made with ❤️ by Baja Stephanus RS",
         br(),
-        link("https://www.kaggle.com/bajasiagian/code", image('https://storage.scolary.com/storage/file/public/71b68248-ba0a-4b26-b15f-0c77cdf341cd.svg',width=pix(25), height=pix(25))),
+        link("https://www.kaggle.com/bajasiagian/code", image('https://static-00.iconduck.com/assets.00/kaggle-icon-2048x2048-fxhlmjy3.png',width=pix(25), height=pix(25))),
         "                                                                                                ",
         link("https://www.linkedin.com/in/bajastephanus/", image('https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png',width=pix(25), height=pix(25))),
     ]
